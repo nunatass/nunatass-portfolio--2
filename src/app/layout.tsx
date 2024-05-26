@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
 import { Header } from '@/components/layouts/header';
-import { Sidebar } from '@/components/layouts/sidebar';
+import { Sidebar } from '@/components/layouts/sidebar/sidebar';
 
 import { cn } from '../lib/utils';
 
