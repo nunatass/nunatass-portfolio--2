@@ -25,7 +25,9 @@ export default function RootLayout({
       <body className={cn(inter.className, 'relative flex h-screen w-screen')}>
         <Sidebar />
         <Header />
-        {children}
+        <div className="no-scrollbar container flex w-full justify-center overflow-x-hidden pl-20 pt-20 lg:pl-56 xl:pl-40">
+          {children}
+        </div>
       </body>
     </html>
   );
