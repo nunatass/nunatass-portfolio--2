@@ -9,7 +9,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'github.com',
+        hostname: 'pub-2815e42a47aa405db2fb0aeb816612b8.r2.dev',
         pathname: '**',
       },
     ],

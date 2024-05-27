@@ -15,7 +15,7 @@ export const projects = [
     repositoryUrl: 'https://github.com/nunatass/luna-store',
     liveUrl: 'https://www.stellastone.store/',
     bannerUrl:
-      'https://github.com/nunatass/animated-gradients/blob/main/public/stellastone.png?raw=true',
+      'https://pub-2815e42a47aa405db2fb0aeb816612b8.r2.dev/stellastone.png',
   },
   {
     title: 'Animated Gradients',
