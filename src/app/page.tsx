@@ -31,12 +31,12 @@ export default function Home() {
             <ArrowUpRight className="size-4 transition-all duration-300 ease-in-out group-hover:translate-x-0.5 group-hover:scale-105" />
           </Link>
         </Button>
-        <div className="flex w-full items-end justify-end gap-2">
+        <div className="hidden w-full items-end justify-end gap-2 md:flex">
           {stack.map((item) => (
             <Button
               variant="outline"
               size="sm"
-              className="w-max  animate-background-shine  bg-[linear-gradient(110deg,#f8f9fa,45%,#e9ecef,55%,#f8f9fa)] bg-[length:200%_100%] px-6 font-medium text-gray-600 transition-all dark:bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)]"
+              className="animate-background-shine bg-[linear-gradient(110deg,#f8f9fa,45%,#e9ecef,55%,#f8f9fa)] bg-[length:200%_100%] px-6 font-medium text-gray-600 transition-all dark:bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)]"
               key={item}
             >
               {item}
