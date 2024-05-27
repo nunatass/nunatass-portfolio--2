@@ -19,7 +19,7 @@ export default function Home() {
         <Button
           variant="outline"
           size="sm"
-          className="w-max transition-all duration-300 ease-in-out hover:scale-105 hover:bg-background hover:shadow"
+          className="w-max transition-all duration-300 ease-in-out hover:scale-105 hover:bg-background hover:shadow dark:hover:shadow-emerald-500/[0.1]"
         >
           <Link
             href="mailto:nunatass@gmail.com"

@@ -47,7 +47,7 @@ export function SidebarItem({ icon: Icon, tooltip, href }: SidebarItemProps) {
           ref={ref as React.RefObject<HTMLButtonElement>}
           variant="outline"
           size="icon"
-          className="size-8 transition-all duration-300 ease-in-out hover:scale-105 hover:bg-background hover:shadow-md"
+          className="size-8 transition-all duration-300 ease-in-out hover:scale-105 hover:bg-background hover:shadow-md dark:hover:shadow-emerald-500/[0.1]"
           asChild
         >
           <Link href={href ?? '/'} target="_blank">
@@ -58,7 +58,7 @@ export function SidebarItem({ icon: Icon, tooltip, href }: SidebarItemProps) {
       <AnimatePresence initial>
         {tooltip && (
           <motion.div
-            className="absolute left-8 top-0 z-40 hidden items-center gap-2 rounded-full border bg-background px-2 py-1 text-sm opacity-0 shadow-md group-hover:flex"
+            className="absolute left-8 top-0 z-40 hidden items-center gap-2 rounded-full border bg-background px-2 py-1 text-sm opacity-0 shadow-md group-hover:flex dark:hover:shadow-emerald-500/[0.1]"
             initial={initialAnimationState}
             animate={animation}
             exit={initialAnimationState}
