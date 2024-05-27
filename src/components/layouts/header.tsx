@@ -1,3 +1,4 @@
+import { FileText } from 'lucide-react';
 import Link from 'next/link';
 
 import { ThemeModeToggle } from './theme-mode-toggle';
@@ -13,13 +14,15 @@ export function Header() {
           Nuno Andrade
         </Link>
         <Link
-          href="/"
-          className="transition-colors duration-300 ease-in-out hover:text-foreground"
+          href="/resume.pdf"
+          className="flex items-center gap-1 transition-colors duration-300 ease-in-out hover:text-foreground"
         >
-          Projects
+          <FileText className="size-4" />
+          Resume
         </Link>
         <Link
-          href="/"
+          href="mailto:nunatass@gmail.com"
+          target="_blank"
           className="transition-colors duration-300 ease-in-out hover:text-foreground"
         >
           Connect

@@ -3,6 +3,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
+import { Footer } from '@/components/layouts/footer';
 import { Header } from '@/components/layouts/header';
 import { Sidebar } from '@/components/layouts/sidebar/sidebar';
 import { ThemeProvider } from '@/components/providers/theme-provider';
@@ -42,8 +43,9 @@ export default function RootLayout({
         >
           <Sidebar />
           <Header />
-          <div className="no-scrollbar container flex w-full justify-center overflow-x-hidden pl-20 pt-20 lg:pl-56 xl:pl-40">
+          <div className="no-scrollbar container flex h-max w-full flex-col justify-center overflow-x-hidden pl-20 pt-20 lg:pl-56 xl:pl-40">
             {children}
+            <Footer />
           </div>
         </ThemeProvider>
       </body>
