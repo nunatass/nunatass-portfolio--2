@@ -13,7 +13,7 @@ import { SidebarItem } from './sidebar-item';
 
 export function Sidebar() {
   return (
-    <aside className="fixed  left-0 top-0 z-30 flex h-screen w-14 flex-col items-center gap-[12px] border-r bg-white py-4 text-gray-400">
+    <aside className="fixed  left-0 top-0 z-30 flex h-screen w-14 flex-col items-center gap-[12px] border-r bg-background py-4 text-gray-400">
       <div className="mb-8 flex items-center justify-center brightness-95 transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-100">
         <Image src="/logo.svg" alt="logo" width={32} height={32} />
       </div>

@@ -47,7 +47,7 @@ export function SidebarItem({ icon: Icon, tooltip, href }: SidebarItemProps) {
           ref={ref as React.RefObject<HTMLButtonElement>}
           variant="outline"
           size="icon"
-          className="size-8 transition-all duration-300 ease-in-out hover:scale-105 hover:bg-white hover:shadow-md"
+          className="size-8 transition-all duration-300 ease-in-out hover:scale-105 hover:bg-background hover:shadow-md"
           asChild
         >
           <Link href={href ?? '/'} target="_blank">
@@ -58,7 +58,7 @@ export function SidebarItem({ icon: Icon, tooltip, href }: SidebarItemProps) {
       <AnimatePresence initial>
         {tooltip && (
           <motion.div
-            className="absolute left-8 top-0 z-40 hidden items-center gap-2 rounded-full border bg-white px-2 py-1 text-sm opacity-0 shadow-md group-hover:flex"
+            className="absolute left-8 top-0 z-40 hidden items-center gap-2 rounded-full border bg-background px-2 py-1 text-sm opacity-0 shadow-md group-hover:flex"
             initial={initialAnimationState}
             animate={animation}
             exit={initialAnimationState}
@@ -69,8 +69,8 @@ export function SidebarItem({ icon: Icon, tooltip, href }: SidebarItemProps) {
           >
             <div className=" relative flex items-center justify-center rounded-full border">
               <Plus className="size-4" />
-              <div className="absolute left-[-12.5px] top-1/2 z-10 size-2 -translate-y-1/2 rotate-45 rounded-[2px] border bg-white" />
-              <div className="absolute left-[-9px] top-1/2 z-10 h-2.5 w-1.5 -translate-y-1/2 rounded-[1.5px] bg-white" />
+              <div className="absolute left-[-12.5px] top-1/2 z-10 size-2 -translate-y-1/2 rotate-45 rounded-[2px] border bg-background" />
+              <div className="absolute left-[-9px] top-1/2 z-10 h-2.5 w-1.5 -translate-y-1/2 rounded-[1.5px] bg-background" />
             </div>
             {tooltip}
           </motion.div>

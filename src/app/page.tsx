@@ -19,7 +19,7 @@ export default function Home() {
         <Button
           variant="outline"
           size="sm"
-          className="w-max transition-all duration-300 ease-in-out hover:scale-105 hover:bg-white hover:shadow"
+          className="w-max transition-all duration-300 ease-in-out hover:scale-105 hover:bg-background hover:shadow"
         >
           <Link
             href="mailto:nunatass@gmail.com"
@@ -30,14 +30,14 @@ export default function Home() {
           </Link>
         </Button>
       </div>
-      <div className=" mt-20 flex w-full flex-wrap items-start gap-x-8">
+      <div className="mt-20 flex w-full flex-wrap items-start gap-x-8">
         <ProjectCard
           title="Spotify UI Clone"
           description="This project is Spotify UI clone, built using Next.js 13, Tailwind CSS, and Spotify's Web API"
           repositoryUrl="https://github.com/nunatass/spotify-clone"
           liveUrl="https://spotify-clone-nine-weld.vercel.app/"
           bannerUrl="https://raw.githubusercontent.com/nunatass/spotify-clone/main/public/screenshot-1.png"
-          className="-mt-20"
+          className="-mt-24"
         />
         <ProjectCard
           title="Stella Stone Store"
@@ -45,7 +45,7 @@ export default function Home() {
           repositoryUrl="https://github.com/nunatass/luna-store"
           liveUrl="https://www.stellastone.store/"
           bannerUrl="https://github.com/nunatass/animated-gradients/blob/main/public/Screenshot%202024-04-25%20at%2001.19.34.png?raw=true"
-          className="-mt-20"
+          className="-mt-24"
         />
         <ProjectCard
           title="Animated Gradients"
