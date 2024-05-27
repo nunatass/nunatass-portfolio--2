@@ -4,10 +4,12 @@ import Link from 'next/link';
 import { ProjectCard } from '@/components/layouts/project-card';
 import { Button } from '@/components/ui/button';
 
+const stack = ['React.js', 'Next.js', 'Java', 'Spring Boot', 'Full Stack'];
+
 export default function Home() {
   return (
     <main className="w-full ">
-      <div className="flex w-full flex-col  gap-4 border-b pb-12">
+      <div className="flex w-full flex-col  gap-4 border-b pb-2">
         <p className="w-full text-sm md:w-[500px]">
           I&apos;m a <span className="font-semibold">Software Engineer</span>{' '}
           with 4+ years of hands-on experience designing, developing, and
@@ -29,6 +31,18 @@ export default function Home() {
             <ArrowUpRight className="size-4 transition-all duration-300 ease-in-out group-hover:translate-x-0.5 group-hover:scale-105" />
           </Link>
         </Button>
+        <div className="flex w-full items-end justify-end gap-2">
+          {stack.map((item) => (
+            <Button
+              variant="outline"
+              size="sm"
+              className="w-max  animate-background-shine  bg-[linear-gradient(110deg,#f8f9fa,45%,#e9ecef,55%,#f8f9fa)] bg-[length:200%_100%] px-6 font-medium text-gray-600 transition-all dark:bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)]"
+              key={item}
+            >
+              {item}
+            </Button>
+          ))}
+        </div>
       </div>
       <div className="mt-20 flex w-full flex-wrap items-start gap-x-8">
         <ProjectCard
