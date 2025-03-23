@@ -15,11 +15,14 @@ export default function Home() {
       <div className="flex w-full flex-col  gap-4 border-b pb-2">
         <p className="w-full text-sm md:w-[500px]">
           I&apos;m a <span className="font-semibold">Software Engineer</span>{' '}
-          with 4+ years of hands-on experience designing, developing, and
-          implementing applications and solutions using a range of technologies
-          and programming languages in both frontend and backend. Seeking to
-          leverage broad development experience and hands-on technical expertise
-          in a challenging way.
+          with 5+ years of hands-on experience designing, developing, and
+          implementing innovative applications and solutions. Seeking to
+          leverage extensive development expertise and technical skills to
+          tackle challenging opportunities. Proficient in working with diverse
+          technologies and frameworks, ensuring scalable and eﬃcient systems.
+          Experienced in collaborating with small and large teams across
+          multiple projects and organizations, consistently delivering quality
+          results.
         </p>
         <Button
           variant="outline"
